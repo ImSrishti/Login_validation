@@ -3,9 +3,13 @@ import useForm  from './useForm'
 import validate from './validateInfo'
 import './Form.css'
 
-const FormSignup = () => {
-    const {handleChange , values,handleSubmit,errors} = useForm(validate);
-
+const FormSignup = ({submitForm}) => {
+    const {handleChange , values,handleSubmit,errors}
+     = useForm(
+         validate,
+         submitForm
+         );
+    //why sending validate from here???
 
     return (
         <div className='form-content-right'>
