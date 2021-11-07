@@ -9,13 +9,13 @@ const FormSignup = ({submitForm}) => {
          validate,
          submitForm
          );
-    //why sending validate from here???
-
+  
     return (
         <div className='form-content-right'>
             <form className='form' onSubmit = {handleSubmit}> 
                 <h1>Get Started with us today! Create your account by filling the information below.</h1>
                 <div className='form-inputs'>
+                    
                     <label htmlFor='username'
                         className='form-label'>
                         Username
@@ -23,7 +23,6 @@ const FormSignup = ({submitForm}) => {
                     <input type='text'
                         id='username'
                         name='username'
-                        className='form-label'
                         placeholder='Enter your username'
                         value = {values.username}
                         onChange = {handleChange}
@@ -38,7 +37,6 @@ const FormSignup = ({submitForm}) => {
                     <input type='email'
                         id='email'
                         name='email'
-                        className='form-label'
                         placeholder='Enter your email'
                         value = {values.email}
                         onChange = {handleChange}
@@ -53,7 +51,6 @@ const FormSignup = ({submitForm}) => {
                     <input type='password'
                         id='password'
                         name='password'
-                        className='form-label'
                         placeholder='Enter your password'
                         value = {values.password}
                         onChange = {handleChange}
@@ -70,7 +67,6 @@ const FormSignup = ({submitForm}) => {
                         type='password'
                         id='password2'
                         name='password2'
-                        className='form-label'
                         placeholder='Enter your password2'
                         value = {values.password2}
                         onChange = {handleChange}
@@ -85,7 +81,7 @@ const FormSignup = ({submitForm}) => {
                 <span
                     className='form-input-login' >
                     Already have an account? Login
-                    <a href='#'>here</a>
+                    <a href='#'> here</a>
                 </span>
             </form>
         </div>
